@@ -8,10 +8,10 @@
 ##'    columns needed by fun
 ##' @param fun a function that takes in two rows of posmat and returns:
 ##' \enumerate{
-##'      \item  for pairs included in the numerator and denominator
-##'      \item for pairs that should only be included in the denominator
-##'      \item for pairs that should be ignored all together}
-##' Note that names from \code{posmat} are not perserved in calls to \code{fun}, so the columns of the matrix should be
+##'      \item $2$ for pairs included in the numerator and denominator
+##'      \item $1$ for pairs that should only be included in the denominator
+##'      \item $0$ for pairs that should be ignored all together}
+##' Note that names from \code{posmat} are not preserved in calls to \code{fun}, so the columns of the matrix should be
 ##' referenced numerically
 ##' so this is not available to the fun
 ##' @param r the series of spatial distances (or there maximums) we are
@@ -362,10 +362,10 @@ get.pi.typed.permute <- function(posmat,
 ##'    columns needed by fun
 ##' @param fun a function that takes in two rows of posmat and returns:
 ##' \enumerate{
-##'      \item  for pairs included in the numerator and denominator
-##'      \item for pairs that should only be included in the denominator
-##'      \item for pairs that should be ignored all together}
-##' Note that names from \code{posmat} are not perserved in calls to
+##'      \item $1$ for pairs included in the numerator and denominator
+##'      \item $2$ for pairs that should only be included in the denominator
+##'      \item $0$ for pairs that should be ignored all together}
+##' Note that names from \code{posmat} are not preserved in calls to
 ##' \code{fun}, so the columns of the matrix should be referenced numerically
 ##' so this is not available to fun
 ##' @param r the series of spatial distances (or there maximums) we are
